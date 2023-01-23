@@ -18,8 +18,8 @@ public class Transaction {
 	@Id
 	private String Id;
 	
-	@Column(name="amount_in_cents")
-	private Integer amountInCents;
+	@Column(name="amount_in_pesos")
+	private Integer amountInPesos;
 	
 	private String currency;
 	private String reference;
@@ -47,12 +47,12 @@ public class Transaction {
 		Id = id;
 	}
 
-	public Integer getAmountInCents() {
-		return amountInCents;
+	public Integer getAmountInPesos() {
+		return amountInPesos;
 	}
 
-	public void setAmountInCents(Integer amountInCents) {
-		this.amountInCents = amountInCents;
+	public void setAmountInPesos(Integer amountInCents) {
+		this.amountInPesos = amountInCents;
 	}
 
 	public String getCurrency() {
