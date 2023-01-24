@@ -1,5 +1,9 @@
 package com.payment.rider.driver.dto;
 
+import javax.validation.Valid;
+import javax.validation.constraints.NotEmpty;
+
+
 public class PayMethodDTO {
 	
 	@NotEmpty
