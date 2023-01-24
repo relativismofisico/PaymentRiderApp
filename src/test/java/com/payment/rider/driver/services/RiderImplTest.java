@@ -45,17 +45,7 @@ public class RiderImplTest {
 	
 	@BeforeEach
 	void setUp(){
-		List<User> users = new ArrayList<>();
 		
-		userRider = new User();
-		userRider.setFirstName("Juan");
-		userRider.setLastName("Lopez");
-		userRider.setEmail("juan.lopez@gmail.com");
-		userRider.setStatus("init_ride");
-		userRider.setRole("rider");
-		userRider.setCreateAt(new Date());
-		userRider.setPhone("32065823128");
-        
 		userDriver  = new User();
 		userDriver.setFirstName("Sebastian");
 		userDriver.setLastName("Orrgeo");
@@ -66,13 +56,6 @@ public class RiderImplTest {
 		userDriver.setCreateAt(new Date());
 		userDriver.setPhone("3192306265");
 		
-		users.add(userRider);
-		users.add(userDriver);
-		
-		rider=new Rider();
-		rider.setStatus("init");
-		rider.setCreateAt(new Date());
-		rider.setUser(users);
 		
 	}
 
