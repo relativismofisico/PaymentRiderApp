@@ -1,5 +1,6 @@
 package com.payment.rider.driver.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.CascadeType;
@@ -13,7 +14,7 @@ import javax.persistence.PrePersist;
 
 @Entity
 @Table(name="transactions")
-public class Transaction {
+public class Transaction implements Serializable {
 	
 	@Id
 	private String Id;
@@ -115,4 +116,5 @@ public class Transaction {
 	public void prePersist() {
 		createAt= new Date();
 	}
+	private static final long serialVersionUID = 1L;
 }

@@ -1,5 +1,6 @@
 package com.payment.rider.driver.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -11,7 +12,7 @@ import javax.persistence.PrePersist;
 
 @Entity
 @Table(name="pay_methods")
-public class PayMethod {
+public class PayMethod implements Serializable{
 	
 	@Id
 	private Integer Id;
@@ -111,5 +112,8 @@ public class PayMethod {
 	public void prePersist() {
 		createAt= new Date();
 	}
+	
+	private static final long serialVersionUID = 1L;
+
 	
 }

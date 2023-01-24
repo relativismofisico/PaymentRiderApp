@@ -1,5 +1,6 @@
 package com.payment.rider.driver.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.CascadeType;
@@ -18,7 +19,7 @@ import javax.persistence.OneToOne;
 
 @Entity
 @Table(name="users")
-public class User {
+public class User implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy =GenerationType.IDENTITY)
@@ -143,6 +144,6 @@ public class User {
 		this.ride = ride;
 	}
 	
-	
+	private static final long serialVersionUID = 1L;
 		
 }

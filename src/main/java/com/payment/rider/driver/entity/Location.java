@@ -1,5 +1,6 @@
 package com.payment.rider.driver.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.CascadeType;
@@ -14,7 +15,7 @@ import javax.persistence.OneToOne;
 
 @Entity
 @Table
-public class Location {
+public class Location implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -70,5 +71,6 @@ public class Location {
 		this.longitude = longitude;
 	}
 	
+	private static final long serialVersionUID = 1L;
 	
 }

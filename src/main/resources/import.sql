@@ -1,0 +1,3 @@
+INSERT INTO db_payment_rider_driver.pay_methods (id, customer_email, status, token, type, create_at) VALUES(4256334, 'relativismofisico@gmail.com','', 'tok_test_272357_a410674e110b554dfedece325C140f1d', 'CARD', NOW()); 
+INSERT INTO db_payment_rider_driver.users (firstName, lastName, email, phone, role, status, pay_method_id, birthday_date, create_at) VALUES('John', 'Redondo', 'relativismofisico@gmail.com', '3126029259', 'rider', '', 4256334, '1987-01-19', '2023-01-24');
+NSERT INTO db_ride_hailing.users (firstName, lastName, email, phone, role, status, birthday_date, last_service, create_at) VALUES('Sebastian', 'Orrego', 'juan.orrego@gmail.com', '345252654', 'driver', 'free', '1998-11-03', NOW(), '2023-01-22'); 

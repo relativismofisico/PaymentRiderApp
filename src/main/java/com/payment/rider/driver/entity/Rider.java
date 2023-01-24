@@ -1,5 +1,6 @@
 package com.payment.rider.driver.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
@@ -17,7 +18,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="riders")
-public class Rider {
+public class Rider implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -101,4 +102,5 @@ public class Rider {
 		createAt=new Date();
 	}
 	
+	private static final long serialVersionUID = 1L;
 }
